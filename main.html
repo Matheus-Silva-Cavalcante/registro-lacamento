@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Lançamentos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="/categorias/novacategoria/salvarcategoria.js" defer></script>
+    <script src="/categorias/novacategoria/novacategoria.js" defer></script>
+    <script src="/novolancamento/salvarlacamento.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <section class="section-buscar section-buscar-rodape">
+            <input id="campoBusca" class="campo-busca" type="text" placeholder="Buscar Lançamento">
+
+            <button id="btnBuscarLancamento" class="icon-lupa"></button>
+
+            <div class="valorEntradaSaida">
+                <span id="valorTotal"></span>
+            </div>
+        </section>
+    
+        <section id="lancamentos">
+        <!-- <div class="divlancamento">
+                <div class="lancamento">
+                    <div class="lancamento-conteudo">
+                        <div class="lancamento-conteudo__icon lancamento-conteudo__icon__menos">
+                            <div class="icon-dinheiro-menos icon-dinheiro__menos__mais"></div>
+                        </div>
+                    </div>
+
+                    <div class="informacao">
+                        <div class="lancamento-conteudo__descricao__valor">
+                            <div class="lancamento-conteudo__descricao__data">
+                                <div class="lancamento-conteudo__descricao">
+                                    Energia
+                                </div>
+
+                                <div class="lancamento-conteudo__data">
+                                    12/12/2012
+                                </div>
+                            </div>
+
+
+                            <div class="lancamento-conteudo__valor">
+                                <img src="img/R$.svg">
+                                500
+                            </div>                    
+                        </div>
+
+                        <div id="lancamentoConteudoCategorias" class="lancamento-conteudo__categoria">
+                            <div class="lancamento-conteudo__categorias">
+                                Despesas de casa
+                                <div class="lancamento-conteudo__categoria__color"></div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="lancamento-conteudo__bnt" style="display: none;">
+                    <button class="btn-opcao-lancamento btn-editar">
+                        <div class="icon-editor"></div>
+                    </button>
+
+                    <button class="btn-opcao-lancamento btn-lixeira">
+                        <div class="icon-white"></div>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="divlancamento">
+                <div class="lancamento ">
+                    <div class="lancamento-conteudo">
+                        <div class="lancamento-conteudo__icon lancamento-conteudo__icon__mais">
+                            <div class="icon-dinheiro-mais icon-dinheiro__menos__mais"></div>
+                        </div>
+                    </div>
+
+                    <div class="informacao">
+                        <div class="lancamento-conteudo__descricao__valor">
+                            <div class="lancamento-conteudo__descricao__data">
+                                <div class="lancamento-conteudo__descricao">
+                                    Salário
+                                </div>
+
+                                <div class="lancamento-conteudo__data">
+                                    12/12/2012
+                                </div>
+                            </div>
+
+
+                            <div class="lancamento-conteudo__valor">
+                                <img src="img/R$.svg">
+                                5000
+                            </div>                    
+                        </div>
+
+                        <div class="lancamento-conteudo__categoria">
+                            <div class="lancamento-conteudo__categorias">
+                                Despesas de casa
+                                <div class="lancamento-conteudo__categoria__color"></div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="lancamento-conteudo__bnt" style="display: none;">
+                    <button class="btn-opcao-lancamento btn-editar">
+                        <div class="icon-editor"></div>
+                    </button>
+
+                    <button class="btn-opcao-lancamento btn-lixeira">
+                        <div class="icon-white"></div>
+                    </button>
+                </div>
+            </div>       -->
+        </section>
+    
+        <section class="rodape section-buscar-rodape">
+            <a class="btn" href="/categorias/categorias.html">
+                <button class="btn">                
+                    Categorias
+                </button>
+            </a>
+    
+            <a class="btn" href="/novolancamento/novolancamento.html">
+                <button class="btn">Novo Lançamento</button>
+            </a>
+
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Categoria</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/categorias/novacategoria/novacategoria.css">
+
+    <script src="/categorias/novacategoria/salvarcategoria.js" defer></script>
+    <script src="novacategoria.js" defer></script>
+</head>
+<body>
+    <div class="containerNovaCategoria">
+        <div class="area-titulo">
+            <h1>
+                Nova Categoria
+            </h1>
+        </div>
+        
+
+        <div class="area-conteudo">
+            <div class="area-input area-input-texto">
+                <label for="textoCategoria">Categoria :</label>
+                <input class="input input-texto-categoria" id="textoCategoria" type="text" placeholder="Nova Categoria">
+
+                <div id="inputCategoriaVasio" class="alerta-campo-vasio" style="display: none;">
+                    De um nome para sua Categoria !
+                </div>
+            </div>
+
+            <div class="area-input area-input-color">
+                <label for="corCategoria">Cor da Categoria :</label>
+                <input class="input input-cor-categoria" id="corCategoria" type="color" value="#4E7FEA">
+            </div>
+
+            <div class="area-button">
+                <button class="btn btn-salvar-categoria">Salvar</button>
+                
+                <button class="btn btn-cancelar" onclick="btnCancelarAcaoNovaCategoria()">Cancelar</button>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

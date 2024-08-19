@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Lançamento</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/novolancamento/novolancamento.css">
+
+    <script src="/categorias/novacategoria/salvarcategoria.js" defer></script>
+    <script src="salvarlacamento.js" defer></script>
+    <script src="novolancamento.js" defer></script>
+</head>
+<body>
+    <div class="containerNovoLancamento">
+        <div class="area-titulo">
+            <h1>
+                Novo Lançamento
+            </h1>
+        </div>
+        
+
+        <div class="area-conteudo">
+            <div class="area-input">
+                <label for="descricaoLancamento">Descrição :</label>
+                <input class="input" id="descricaoLancamento" type="text" placeholder="Descrição">
+
+                <div id="inputDescricaoVasio" class="alerta-campo-vasio" style="display: none;">
+                    Escreva uma Descrição !
+                </div>
+            </div>
+
+            <div class="area-input">
+                <label for="valorLancamento">valor :</label>
+                <input class="input" id="valorLancamento" type="number" placeholder="R$ 0.00">
+
+                <div id="inputValorVasio" class="alerta-campo-vasio" style="display: none;">
+                    informe um Valor !
+                </div>
+            </div>
+
+            <div class="area-select">
+                <label for="tipoLancamento">Tipo :</label>
+                <select class="select-opcao" id="tipoLancamento">
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saida</option>
+                </select>                
+            </div>
+
+            <div class="area-select">
+                <label for="categoriaLancamento">Categoria :</label>
+                <select class="select-opcao" id="categoriaLancamento">
+                    <!-- <option>Farmácia</option>
+                    <option>cosmeticos</option> -->
+                </select>         
+                
+                <div id="selectCategoriaVasia" class="alerta-campo-vasio" style="display: none;">
+                    Crie sua Categoria !
+                </div>
+            </div>
+
+            <div class="area-input">
+                <label for="dataLancamento">Data :</label>
+                <input class="input" id="dataLancamento" type="date">
+
+                <div id="inputDataVasio" class="alerta-campo-vasio" style="display: none;">
+                    Informe a data atual !
+                </div>
+            </div>
+
+
+            <div class="area-button">
+                <a href="/main.html"></a>
+                <button class="btn btn-salvar-lancamento">Salvar</button>
+                
+                <button class="btn btn-cancelar" onclick="btnCancelarAcaoNovoLancamento()">Cancelar</button>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
