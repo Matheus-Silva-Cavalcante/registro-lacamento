@@ -1,1 +1,1 @@
-# registro-lacamento
+# registro-lancamento
